@@ -232,7 +232,8 @@ function getAverageWordLength(arr){
     for(i = 0; i < arr.length; i++){
         if(arr[i].includes(" ")){
             avgWords = avgWords + 1;
-        }else{
+        }
+        else{
             avgWords = avgWords -1;
         }
     }
@@ -325,8 +326,9 @@ var regionalFlavors = ["Pink Bubblegum",
     "Chocolate Chocolate Chip Cheesecake",
     "Caramel 'n' Cookies"]
 
-function getRandomFlavors(/*code here*/){
+function getRandomFlavors(arrOne, arrTwo, arrThree, arrFour){
+    let allFlavors = arrOne.concat(arrTwo, arrThree, arrFour);
+    let randomFlavors = [];
 
-    /*code here*/
-
+    
 }

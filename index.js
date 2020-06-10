@@ -329,6 +329,15 @@ var regionalFlavors = ["Pink Bubblegum",
 function getRandomFlavors(arrOne, arrTwo, arrThree, arrFour){
     let allFlavors = arrOne.concat(arrTwo, arrThree, arrFour);
     let randomFlavors = [];
+    function shuffle(array) {
+        array.sort(() => Math.random() - 0.5);
+      }
 
-    
+      shuffle(allFlavors);
+
+    for(let i = 0; randomFlavors.length < 31; i++){
+        randomFlavors.push(allFlavors[i]);
+    }
+    return randomFlavors;
 }
+console.log(getRandomFlavors(newFlavors, theOriginalFlavors, seasonalFlavors, regionalFlavors));
